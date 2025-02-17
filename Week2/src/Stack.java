@@ -11,22 +11,23 @@ public class Stack extends myBuffer
   }
 
   public void push(int item){
-    if (top == items.length - 1){
-      System.out.println("Stack Overflow");
-      return;
+    try {
+        items[++top] = item;
+    } catch (Exception e) {
+        top = items.length - 1;
+        System.out.println("Stack Overflow");
     }
-    items[++top] = item;
   }
-
   public int pop(){
-    if (top == -1){
-      System.out.println("Stack Underflow");
-      return -1;
+    try {
+        return items[top--];
+    } catch (Exception e) {
+        System.out.println("Stack Underflow");
+        return -1;
     }
-    return items[top--];
   }
 
   public int getTop(){
-    return items
+    return items[top];
   }
 }

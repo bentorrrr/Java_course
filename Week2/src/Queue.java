@@ -12,21 +12,40 @@ public class Queue extends myBuffer
     }
     
     public void enqueue (int item){
-      if (count >= capacity){
-        System.out.println("Queue Overflow");
-        return;
+      try {
+          if (count >= capacity){
+              throw new Exception("Queue Overflow");
+          }
+          items[tail++ % capacity] = item;
+          count++;
+      } catch (Exception e) {
+          System.out.println(e.getMessage());
       }
-      items[tail++ % capacity] = item;
-      count++;
+      // if (count >= capacity){
+      //   System.out.println("Queue Overflow");
+      //   return;
+      // }
+      // items[tail++ % capacity] = item;
+      // count++;
     }
 
     public int dequeue(){
-      if(count == 0){
-        System.out.println("Queue Underflow");
-        return -1;
+      try {
+          if (count == 0){
+              throw new Exception("Queue Underflow");
+          }
+          count--;
+          return items[head++ % capacity];
+      } catch (Exception e) {
+          System.out.println(e.getMessage());
+          return -1;
       }
-      count--;
-      return items[head++%capacity];
+      // if(count == 0){
+      //   System.out.println("Queue Underflow");
+      //   return -1;
+      // }
+      // count--;
+      // return items[head++%capacity];
     }
 
     public int peek(){
