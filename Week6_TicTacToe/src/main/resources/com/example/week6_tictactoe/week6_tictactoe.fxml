@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.week6_tictactoe.GameController">
+
+  <center>
+    <GridPane fx:id="grid"
+              alignment="CENTER"
+              hgap="5" vgap="5"
+              BorderPane.alignment="CENTER"/>
+  </center>
+
+  <bottom>
+    <HBox spacing="8" alignment="CENTER">
+      <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+      </padding>
+
+      <Label text="Turn:"/>
+      <Label fx:id="turnLabel" text="Your turn"/>
+
+      <Separator orientation="VERTICAL" prefHeight="20"/>
+
+      <Label text="Player:"/>
+      <Label fx:id="playerScoreLabel" text="0"/>
+
+      <Label text="Computer:"/>
+      <Label fx:id="computerScoreLabel" text="0"/>
+
+      <Label text="Draws:"/>
+      <Label fx:id="drawLabel" text="0"/>
+
+      <Button text="Start"  onAction="#startNewGame"/>
+      <Button text="Reset"  onAction="#resetScore"/>
+      <Button text="Quit"   onAction="#quitGame"/>
+    </HBox>
+  </bottom>
+</BorderPane>

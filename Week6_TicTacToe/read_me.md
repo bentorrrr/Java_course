@@ -1,0 +1,1 @@
+To run this program go to this directory 👉 Week6_TicTacToe\out\artifacts\Week6_TicTacToe_jar and paste this command: java --module-path . --add-modules javafx.controls,javafx.fxml -jar Week6_TicTacToe.jar 
