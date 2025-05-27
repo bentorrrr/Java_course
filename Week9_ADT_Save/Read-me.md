@@ -1,0 +1,1 @@
+To run this program go to this directory 👉 Week9_ADT_Save\out\artifacts\Week9_ADT_Save_jar and paste this command: java --module-path . --add-modules javafx.controls,javafx.fxml -jar .\Week9_ADT_Save.jar

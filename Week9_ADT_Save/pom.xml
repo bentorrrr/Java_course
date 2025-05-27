@@ -80,7 +80,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.week9_adt_save/com.example.week9_adt_save.HelloApplication
+                            <mainClass>com.example.week9_adt_save/com.example.week9_adt_save.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
