@@ -1,0 +1,1 @@
+To run this program go to this directory 👉 \Week8_Generic\out\artifacts\Week8_Generic_jar and paste this command: java --module-path . --add-modules javafx.controls,javafx.fxml -jar .\Week8_Generic.jar
