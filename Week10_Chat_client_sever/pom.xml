@@ -81,7 +81,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.week10_chat_client_sever/com.example.week10_chat_client_sever.HelloApplication
+                                com.example.week10_chat_client_sever/com.example.week10_chat_client_sever.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
