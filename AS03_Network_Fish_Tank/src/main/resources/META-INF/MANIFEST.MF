@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.example.as03_network_fish_tank.FishServer
+Class-Path: bootstrapfx-core-0.4.0.jar javafx-fxml-21-win.jar javafx-fxm
+ l-21.jar javafx-controls-21.jar javafx-base-21.jar formsfx-core-11.6.0.
+ jar javafx-graphics-21.jar gson-2.13.1.jar javafx-graphics-21-win.jar e
+ rror_prone_annotations-2.38.0.jar controlsfx-11.2.1.jar javafx-controls
+ -21-win.jar javafx-base-21-win.jar
+
